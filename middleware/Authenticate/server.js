@@ -44,3 +44,7 @@ app.post('/authenticate', (req, res) => {
 app.listen(3000, () => {
   console.log('Servidor rodando na porta 3000');
 });
+
+const funcionariosRoutes = require('./ControlleFuncionarios');
+
+app.use('/ControllerFuncionarios', funcionariosRoutes);

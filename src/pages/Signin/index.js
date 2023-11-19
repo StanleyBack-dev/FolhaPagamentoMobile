@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity } from "react-nativ
 import * as Animatable from "react-native-animatable";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function SignIn() {
+export default function SignIn(props) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -19,13 +19,9 @@ export default function SignIn() {
       .then((response) => response.json())
       .then((data) => {
         if (data.message === 'Usuário autenticado com sucesso') {
-          // Usuário autenticado com sucesso
-          // Navegar para a próxima tela
-          alert('Usuário autenticado com sucesso');
+          props.navigation.navigate('Home');
         } else {
-          // Falha na autenticação
-          // Mostrar mensagem de erro
-          alert('Falha na autenticação');
+          alert('Usuário ou Senha incorretos...');
         }
       })
       .catch((error) => {
@@ -60,11 +56,7 @@ export default function SignIn() {
 
         <TouchableOpacity style={styles.button} onPress={handleLogin}>
           <Text style={styles.buttonText}>Acessar</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.buttonRegister}>
-          <Text style={styles.registerText}>Não possui uma conta ? Cadastre-se</Text>
-        </TouchableOpacity>
+        </TouchableOpacity>      
       </Animatable.View>
     </View>
   );
