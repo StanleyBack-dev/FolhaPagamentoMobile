@@ -9,6 +9,7 @@
     - [Inicialização da aplicação Expo](#inicialização-da-aplicação-expo)
   - [Configuração do Banco de Dados](#configuração-do-banco-de-dados)
   - [Lembrete Importante](#lembrete-importante)
+  - [Agradecimentos](#agradecimentos)
 
 # Projeto Mobile com React Native, NodeJS e Expo
 
@@ -76,3 +77,13 @@ Você pode executar este script em qualquer cliente MySQL de sua escolha para co
 Para que o sistema funcione corretamente, você deve ir ao arquivo `/AppFolhaPagamento/middleware/server.js` pelo terminal e rodar o comando `node server.js`. 
 
 Além disso, se você quiser acessar o aplicativo pelo Expo Go no seu celular, você terá que ir nos arquivos das páginas `/AppFolhaPagamento/src/pages/Home/` e alterar a URL de requisição para o seu IPV4 local. Por exemplo: `http://seu-ip-local:3000/funcionarios`.
+
+# Agradecimentos
+
+Gostaria de expressar minha profunda gratidão a todos que contribuíram para este projeto e tornaram isso possível.
+
+Agradeço a todos os colaboradores e à comunidade em geral que contribuíram com seu tempo e esforço para melhorar este projeto. Seu apoio e contribuições foram inestimáveis.
+
+Também gostaria de agradecer a todos os usuários que usaram este projeto, forneceram feedback e relataram problemas. Sua participação tem sido fundamental para melhorar a qualidade e a usabilidade deste projeto.
+
+Finalmente, agradeço a você por usar este projeto e espero que ele seja útil para você. Se você tiver alguma sugestão ou feedback, sinta-se à vontade para abrir uma issue ou enviar um pull request.
