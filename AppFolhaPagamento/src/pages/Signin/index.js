@@ -19,7 +19,7 @@ export default function SignIn(props) {
       .then((response) => response.json())
       .then((data) => {
         if (data.message === 'Usuário autenticado com sucesso') {
-          props.navigation.navigate('Home');
+          props.navigation.navigate('Home', { username: email });
         } else {
           alert('Usuário ou Senha incorretos...');
         }
