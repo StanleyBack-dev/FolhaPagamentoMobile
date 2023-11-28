@@ -36,7 +36,7 @@ const FuncionariosView = () => {
 
   const getFuncionarios = async () => {
     try {
-      const response = await fetch("http://192.168.3.12:3000/funcionarios");
+      const response = await fetch("http://10.0.0.2:3000/funcionarios");
       const data = await response.json();
       setFuncionarios(data);
     } catch (error) {
@@ -46,7 +46,7 @@ const FuncionariosView = () => {
   const adicionarFuncionario = async () => {
     try {
       const response = await fetch(
-        "http://192.168.3.12:3000/adicionarFuncionario",
+        "http://10.0.0.2:3000/adicionarFuncionario",
         {
           method: "POST",
           headers: {
@@ -66,7 +66,7 @@ const FuncionariosView = () => {
 
   const deletarFuncionario = async (cpf) => {
     try {
-      const response = await fetch(`http://192.168.3.12:3000/funcionarios/${cpf}`, {
+      const response = await fetch(`http://10.0.0.2:3000/funcionarios/${cpf}`, {
         method: "DELETE",
       });
       if (response.ok) {
@@ -82,7 +82,7 @@ const FuncionariosView = () => {
 
   const editarFuncionario = async (cpf, novosDados) => {
     try {
-      const response = await fetch(`http://192.168.3.12:3000/funcionarios/${cpf}`, {
+      const response = await fetch(`http://10.0.0.2:3000/funcionarios/${cpf}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
