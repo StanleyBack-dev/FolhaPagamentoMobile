@@ -32,7 +32,7 @@ const GerarHolerite = ({ navigation, route }) => {
 
   const getFuncionarios = async () => {
     try {
-      const response = await fetch("http://10.0.2.2:3000/funcionarios");
+      const response = await fetch("http://192.168.3.12:3000/funcionarios");
       const data = await response.json();
       setFuncionarios(data);
     } catch (error) {

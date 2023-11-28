@@ -9,7 +9,7 @@ export default function SignIn(props) {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    fetch('http://10.0.2.2:3000/authenticate', {
+    fetch('http://192.168.3.12:3000/authenticate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

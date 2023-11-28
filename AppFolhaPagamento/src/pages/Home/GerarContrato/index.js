@@ -20,7 +20,7 @@ const GerarContrato = () => {
   const [showTermsSuccess, setShowTermsSuccess] = useState(false); // Adicionado estado para mostrar sucesso dos termos
 
   useEffect(() => {
-    fetch('http://10.0.2.2:3000/funcionarios')
+    fetch('http://192.168.3.12:3000/funcionarios')
       .then(response => response.json())
       .then(data => setFuncionarios(data))
       .catch(error => console.error('Error:', error));

@@ -13,18 +13,17 @@ export default function Home({ navigation, route }) {
   
   return (
     <SafeAreaView style={styles.container}>
+    <View style={styles.header}>
+      <Animatable.Image
+        source={require('../../../assets/Logo.png')}
+        style={styles.logo}
+        resizeMode='contain'
+        animation='bounceIn'
+        duration={1000}
+      />
       <Animatable.Text animation="bounceIn" style={styles.welcomeText}>Bem Vindo(a) {username}</Animatable.Text>
-      <View style={styles.container}> 
-        <View style={styles.containerLogo}>
-          <Animatable.Image
-            animation="flipInY"
-            source={require('../../../assets/Logo.png')}
-            style={styles.logo}
-            resizeMode='contain'
-          />
-        </View>
-      </View>
-      <View style={styles.buttonContainer}>
+    </View>
+    <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('FuncionariosView')}>
           <Text style={styles.buttonText}>Gerenciar Funcionários</Text>
         </TouchableOpacity>
@@ -49,31 +48,33 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingHorizontal: 20,
-    backgroundColor: '#f9f9f9'
+    backgroundColor: '#f9f9f9',
   },
-  containerLogo: {
+  header: {
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    marginBottom: 20,
   },
   logo: {
-    width: 210, 
-    height: 210, 
-    borderRadius: 25, 
-    borderWidth: 2,
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    marginRight: 15,
+    marginTop: 15,
   },
   welcomeText: {
     fontSize: 28,
     fontWeight: 'bold',
-    marginBottom: 20,
-    textAlign: 'center',
   },
+
   buttonContainer: {
     justifyContent: 'center',
+    marginTop: 70,
   },
   button: {
     backgroundColor: '#007BFF',
     padding: 15,
-    borderRadius: 4,
+    borderRadius:14,
     alignItems: 'center',
     marginBottom: 10,
     shadowColor: '#000',
