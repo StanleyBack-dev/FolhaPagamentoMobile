@@ -31,7 +31,7 @@ Visite o [site oficial do Node.js](https://nodejs.org/) para baixar e instalar a
 
 Depois de clonar o repositório para a sua máquina, navegue até o diretório do projeto e execute o seguinte comando para instalar todas as dependências listadas no arquivo `package.json`:
 
-bash npm install
+npm install
 
 Isso instalará todos os pacotes do React Native necessários para o projeto, bem como quaisquer bibliotecas de terceiros que o projeto utiliza, como `react-native-animatable`.
 
@@ -39,13 +39,13 @@ Isso instalará todos os pacotes do React Native necessários para o projeto, be
 
 Após a instalação do NodeJS, você pode instalar o Expo CLI globalmente em seu sistema com o seguinte comando:
 
-bash npm install -g expo-cli
+npm install -g expo-cli
 
 ### Inicialização da aplicação Expo
 
 Para inicializar a aplicação, navegue até o diretório do projeto e execute o seguinte comando:
 
-bash expo start
+expo start
 
 Isso abrirá uma nova janela em seu navegador com o Metro Bundler. A partir daí, você pode executar a aplicação em um emulador Android através do Android Studio.
 
@@ -53,7 +53,7 @@ Isso abrirá uma nova janela em seu navegador com o Metro Bundler. A partir daí
 
 Estamos usando o MySQL para nosso banco de dados. Aqui está o script para criar o banco de dados e a tabela de funcionários:
 
-sql CREATE DATABASE paysolutions;
+CREATE DATABASE paysolutions;
 
 USE paysolutions;
 
