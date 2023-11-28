@@ -31,7 +31,7 @@ Visite o [site oficial do Node.js](https://nodejs.org/) para baixar e instalar a
 
 Depois de clonar o repositório para a sua máquina, navegue até o diretório do projeto e execute o seguinte comando para instalar todas as dependências listadas no arquivo `package.json`:
 
-npm install
+```npm install
 
 Isso instalará todos os pacotes do React Native necessários para o projeto, bem como quaisquer bibliotecas de terceiros que o projeto utiliza, como `react-native-animatable`.
 
